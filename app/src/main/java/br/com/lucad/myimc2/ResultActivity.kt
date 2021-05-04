@@ -25,6 +25,7 @@ class ResultActivity : AppCompatActivity() {
         checkImc(resultado)
 
         //COmentatrio
+        //comentario 2
 
     }
 
