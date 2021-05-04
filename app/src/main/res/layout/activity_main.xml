@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_view_imc"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/imc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_view_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_imc"/>
+
+  <EditText
+      android:id="@+id/edit_text_peso"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/my_edit_shape"
+      android:padding="15dp"
+      android:layout_marginHorizontal="10dp"
+      android:hint="Peso"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/text_view_peso"/>
+
+  <TextView
+      android:id="@+id/text_view_altura"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Altura"
+      android:textSize="20sp"
+      android:layout_margin="10dp"
+      android:textStyle="bold"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/edit_text_peso"/>
+
+  <EditText
+      android:id="@+id/edit_text_altura"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Altura"
+      android:background="@drawable/my_edit_shape"
+      android:padding="15dp"
+      android:layout_marginHorizontal="10dp"
+      android:inputType="numberDecimal"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/text_view_altura"/>
+
+  <Button
+      android:id="@+id/button_calcular"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Calcular"
+      android:layout_marginBottom="20dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/edit_text_altura"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
