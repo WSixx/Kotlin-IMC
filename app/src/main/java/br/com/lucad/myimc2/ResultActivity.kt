@@ -24,6 +24,8 @@ class ResultActivity : AppCompatActivity() {
 
         checkImc(resultado)
 
+        //COmentatrio
+
     }
 
     private fun checkImc(resultado: Double){
